@@ -82,3 +82,58 @@ section:nth-child(n + 3) {
     }
   }
 }
+
+/*                  3                 */
+/*          Featured Section         */
+// Desktop:
+.featured-sect {
+  display: grid;
+  grid-template-columns: 50% auto;
+
+  .featured-info {
+    h2 {
+      padding-bottom: 1.75rem;
+    }
+
+    h5 {
+      padding-bottom: 3.75rem;
+    }
+  }
+
+  .featured-img {
+    margin-left: auto;
+  }
+}
+
+/*                  4                 */
+/*            About Section           */
+// Desktop:
+.about-sect {
+  h2 {
+    padding-bottom: 4rem;
+  }
+
+  .about-1 {
+    display: grid;
+    grid-template-columns: 30% auto;
+    column-gap: 2rem;
+    padding-bottom: 3rem;
+
+    .about-text-1 {
+      margin: auto;
+      height: 50%;
+    }
+  }
+
+  .about-2 {
+    display: grid;
+    grid-template-columns: 70% auto;
+    column-gap: 2rem;
+    overflow: hidden;
+
+    .cv-download {
+      margin: auto;
+      height: 5%;
+    }
+  }
+}

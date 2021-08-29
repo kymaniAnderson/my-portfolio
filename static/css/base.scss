@@ -187,3 +187,22 @@ ul {
   display: inline-block;
   cursor: pointer;
 }
+
+.orange-btn {
+  font-size: $desktop-size-4;
+  font-family: "Fauna One";
+  font-weight: 400;
+  background-color: $outlandish-orange;
+  border: none;
+  border-radius: 0.5rem;
+  color: $just-white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+  span {
+    padding-left: 0.5rem;
+  }
+}

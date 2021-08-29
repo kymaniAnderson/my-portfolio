@@ -156,6 +156,25 @@ ul {
   cursor: pointer;
 }
 
+.orange-btn {
+  font-size: 22px;
+  font-family: "Fauna One";
+  font-weight: 400;
+  background-color: #ec6315;
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.orange-btn span {
+  padding-left: 0.5rem;
+}
+
 /*          General Configs          */
 section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
@@ -233,5 +252,62 @@ section:nth-child(n + 3) {
 
 .hero-sect .hero-info .hero-socials ul li:not(:last-child) {
   padding-bottom: 2.5rem;
+}
+
+/*                  3                 */
+/*          Featured Section         */
+.featured-sect {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+}
+
+.featured-sect .featured-info h2 {
+  padding-bottom: 1.75rem;
+}
+
+.featured-sect .featured-info h5 {
+  padding-bottom: 3.75rem;
+}
+
+.featured-sect .featured-img {
+  margin-left: auto;
+}
+
+/*                  4                 */
+/*            About Section           */
+.about-sect h2 {
+  padding-bottom: 4rem;
+}
+
+.about-sect .about-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+      grid-template-columns: 30% auto;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.about-sect .about-1 .about-text-1 {
+  margin: auto;
+  height: 50%;
+}
+
+.about-sect .about-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% auto;
+      grid-template-columns: 70% auto;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  overflow: hidden;
+}
+
+.about-sect .about-2 .cv-download {
+  margin: auto;
+  height: 5%;
 }
 /*# sourceMappingURL=main.css.map */
