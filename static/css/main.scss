@@ -2,13 +2,13 @@
 
 /*          General Configs          */
 // Desktop:
-section:not(:first-child) {
+section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
 }
 
 // Mobile:
 @media only screen and (max-width: 800px) {
-  section:not(:first-child) {
+  section:nth-child(n + 3) {
     padding: 2.25rem 0.75rem;
   }
 }
@@ -31,6 +31,54 @@ section:not(:first-child) {
     float: right;
     a {
       padding-left: 2.5rem;
+    }
+  }
+}
+
+/*                  2                 */
+/*            Hero Section           */
+// Desktop:
+.hero-sect {
+  padding: 3.75rem 8rem 0rem 8rem;
+  overflow: hidden;
+
+  .hero-img {
+    float: left;
+  }
+
+  .hero-info {
+    float: right;
+
+    .hero-text {
+      float: left;
+      text-align: right;
+
+      h1 {
+        padding-top: 4.75rem;
+      }
+
+      h4 {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+      }
+
+      hr {
+        max-width: 7rem;
+        border-width: 0.5px;
+        margin-left: 85%;
+      }
+    }
+
+    .hero-socials {
+      float: right;
+      padding-top: 7.5rem;
+      padding-left: 1.5rem;
+
+      ul {
+        li:not(:last-child) {
+          padding-bottom: 2.5rem;
+        }
+      }
     }
   }
 }

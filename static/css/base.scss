@@ -47,6 +47,7 @@ p,
 a {
   line-height: 150%;
   color: $almost-black;
+  margin: 0;
 }
 
 h1,
@@ -138,6 +139,7 @@ a:hover {
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 // Mobile:
@@ -167,4 +169,21 @@ ul {
   p {
     font-size: $mobile-size-6;
   }
+}
+
+/*          Button Configs          */
+// Desktop:
+.yellow-btn {
+  font-size: $desktop-size-4;
+  font-family: "Fauna One";
+  font-weight: 400;
+  background-color: $mustard-yellow;
+  border: none;
+  border-radius: 0.5rem;
+  color: $almost-black;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }

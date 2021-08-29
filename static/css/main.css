@@ -22,6 +22,7 @@ p,
 a {
   line-height: 150%;
   color: #282321;
+  margin: 0;
 }
 
 h1,
@@ -113,6 +114,7 @@ a:hover {
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 @media only screen and (max-width: 800px) {
@@ -138,13 +140,29 @@ ul {
   }
 }
 
+/*          Button Configs          */
+.yellow-btn {
+  font-size: 22px;
+  font-family: "Fauna One";
+  font-weight: 400;
+  background-color: #f6bd3a;
+  border: none;
+  border-radius: 0.5rem;
+  color: #282321;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
 /*          General Configs          */
-section:not(:first-child) {
+section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
 }
 
 @media only screen and (max-width: 800px) {
-  section:not(:first-child) {
+  section:nth-child(n + 3) {
     padding: 2.25rem 0.75rem;
   }
 }
@@ -170,5 +188,50 @@ section:not(:first-child) {
 
 .nav-sect .nav-items a {
   padding-left: 2.5rem;
+}
+
+/*                  2                 */
+/*            Hero Section           */
+.hero-sect {
+  padding: 3.75rem 8rem 0rem 8rem;
+  overflow: hidden;
+}
+
+.hero-sect .hero-img {
+  float: left;
+}
+
+.hero-sect .hero-info {
+  float: right;
+}
+
+.hero-sect .hero-info .hero-text {
+  float: left;
+  text-align: right;
+}
+
+.hero-sect .hero-info .hero-text h1 {
+  padding-top: 4.75rem;
+}
+
+.hero-sect .hero-info .hero-text h4 {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.hero-sect .hero-info .hero-text hr {
+  max-width: 7rem;
+  border-width: 0.5px;
+  margin-left: 85%;
+}
+
+.hero-sect .hero-info .hero-socials {
+  float: right;
+  padding-top: 7.5rem;
+  padding-left: 1.5rem;
+}
+
+.hero-sect .hero-info .hero-socials ul li:not(:last-child) {
+  padding-bottom: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
