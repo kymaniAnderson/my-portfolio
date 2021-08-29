@@ -1,0 +1,36 @@
+@import "base.scss";
+
+/*          General Configs          */
+// Desktop:
+section:not(:first-child) {
+  padding: 4.5rem 9rem;
+}
+
+// Mobile:
+@media only screen and (max-width: 800px) {
+  section:not(:first-child) {
+    padding: 2.25rem 0.75rem;
+  }
+}
+
+/*                  1                 */
+/*           Top Navigation          */
+// Desktop:
+.nav-sect {
+  padding: 1rem 9rem;
+  background-color: $morning-grey;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+
+  .nav-logo {
+    float: left;
+  }
+
+  .nav-items {
+    float: right;
+    a {
+      padding-left: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,174 @@
+/*          Fonts          */
+@import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:wght@400;700&display=swap");
+/*          Colors          */
+/*          Font Sizes          */
+/*          Page Configs          */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/*          Text Configs          */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  line-height: 150%;
+  color: #282321;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display";
+}
+
+h5,
+p,
+a {
+  font-family: "Fauna One";
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 7px;
+  font-weight: 700;
+}
+
+.featured-h2 {
+  color: #f6bd3a;
+  letter-spacing: normal;
+}
+
+.projects-h2 {
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #83828a;
+}
+
+.skills-h3 {
+  color: #f6bd3a;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.hero-h4 {
+  font-family: "Fauna One";
+}
+
+.featured-h4 {
+  letter-spacing: 7px;
+  color: #83828a;
+}
+
+.projects-h4 {
+  color: #83828a;
+}
+
+h5,
+input,
+textarea {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.projects-h5 {
+  color: #83828a;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f6bd3a;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5,
+  input,
+  textarea {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
+
+/*          General Configs          */
+section:not(:first-child) {
+  padding: 4.5rem 9rem;
+}
+
+@media only screen and (max-width: 800px) {
+  section:not(:first-child) {
+    padding: 2.25rem 0.75rem;
+  }
+}
+
+/*                  1                 */
+/*           Top Navigation          */
+.nav-sect {
+  padding: 1rem 9rem;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.nav-sect .nav-logo {
+  float: left;
+}
+
+.nav-sect .nav-items {
+  float: right;
+}
+
+.nav-sect .nav-items a {
+  padding-left: 2.5rem;
+}
+/*# sourceMappingURL=main.css.map */
