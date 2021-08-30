@@ -304,6 +304,10 @@ section:nth-child(n + 3) {
       grid-template-columns: 40% auto;
 }
 
+.hero-sect .hero-img {
+  margin: auto;
+}
+
 .hero-sect .hero-img img {
   max-width: 100%;
 }
@@ -397,6 +401,7 @@ section:nth-child(n + 3) {
   }
   .featured-sect .featured-img {
     padding-top: 2.5rem;
+    margin: auto;
   }
   .featured-sect .featured-img img {
     max-width: 100%;
@@ -447,6 +452,10 @@ section:nth-child(n + 3) {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     padding-bottom: 1.75rem;
+  }
+  .about-sect .about-1 .about-img {
+    margin: auto;
+    padding-bottom: 1.5rem;
   }
   .about-sect .about-1 .about-img img {
     max-width: 100%;
@@ -589,6 +598,29 @@ section:nth-child(n + 3) {
   padding-bottom: 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .skills-sect h2 {
+    padding-bottom: 2rem;
+  }
+  .skills-sect .skills-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .skills-sect .skills-content .skills-card {
+    margin: 2rem;
+    height: 225px;
+  }
+  .skills-sect .skills-content .skills-card .skills-title {
+    padding-bottom: 1.25rem;
+  }
+}
+
 /*                  7                 */
 /*          Contact Section          */
 .contact-sect {
@@ -656,5 +688,54 @@ section:nth-child(n + 3) {
 .contact-sect .contact-decor .contact-foot p {
   position: relative;
   bottom: -5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-sect .contact-form {
+    float: none;
+    padding: 2.25rem 1.125rem;
+  }
+  .contact-sect .contact-form h2 {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+  .contact-sect .contact-form p {
+    padding-bottom: 1.5rem;
+    text-align: centers;
+  }
+  .contact-sect .contact-form p input,
+  .contact-sect .contact-form p textarea {
+    height: 45px;
+  }
+  .contact-sect .contact-form p textarea {
+    height: 95px;
+  }
+  .contact-sect .contact-form p:last-child {
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  .contact-sect .contact-decor {
+    float: none;
+    background-color: #f6bd3a;
+    padding: 1.25rem 1.125rem 0rem 1.125rem;
+    min-height: 10vh;
+    height: auto !important;
+    height: 10vh;
+    max-width: 100%;
+  }
+  .contact-sect .contact-decor .contact-img {
+    position: relative;
+    left: 0;
+    top: -3rem;
+    margin-top: -3rem;
+  }
+  .contact-sect .contact-decor .contact-img img {
+    max-width: 100%;
+  }
+  .contact-sect .contact-decor .contact-foot p {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

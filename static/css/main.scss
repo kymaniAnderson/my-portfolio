@@ -115,6 +115,8 @@ section:nth-child(n + 3) {
   grid-template-columns: 40% auto;
 
   .hero-img {
+    margin: auto;
+
     img {
       max-width: 100%;
     }
@@ -226,6 +228,8 @@ section:nth-child(n + 3) {
 
     .featured-img {
       padding-top: 2.5rem;
+      margin: auto;
+
       img {
         max-width: 100%;
       }
@@ -278,6 +282,9 @@ section:nth-child(n + 3) {
       padding-bottom: 1.75rem;
 
       .about-img {
+        margin: auto;
+        padding-bottom: 1.5rem;
+
         img {
           max-width: 100%;
         }
@@ -431,6 +438,30 @@ section:nth-child(n + 3) {
   }
 }
 
+// Mobile
+@media only screen and (max-width: 800px) {
+  .skills-sect {
+    h2 {
+      padding-bottom: 2rem;
+    }
+
+    .skills-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .skills-card {
+        margin: 2rem;
+        height: 225px;
+
+        .skills-title {
+          padding-bottom: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
 /*                  7                 */
 /*          Contact Section          */
 // Desktop:
@@ -497,6 +528,69 @@ section:nth-child(n + 3) {
       p {
         position: relative;
         bottom: -5rem;
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 800px) {
+  .contact-sect {
+    .contact-form {
+      float: none;
+      padding: 2.25rem 1.125rem;
+
+      h2 {
+        padding-bottom: 2rem;
+        text-align: center;
+      }
+
+      p {
+        padding-bottom: 1.5rem;
+        text-align: centers;
+
+        input,
+        textarea {
+          height: 45px;
+        }
+
+        textarea {
+          height: 95px;
+        }
+      }
+
+      p:last-child {
+        text-align: center;
+        padding-bottom: 4rem;
+      }
+    }
+
+    .contact-decor {
+      float: none;
+      background-color: $mustard-yellow;
+      padding: 1.25rem 1.125rem 0rem 1.125rem;
+      min-height: 10vh;
+      height: auto !important;
+      height: 10vh;
+      max-width: 100%;
+
+      .contact-img {
+        position: relative;
+        left: 0;
+        top: -3rem;
+        margin-top: -3rem;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .contact-foot {
+        p {
+          position: relative;
+          bottom: 0;
+          padding-bottom: 2rem;
+        }
       }
     }
   }
