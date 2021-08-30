@@ -20,11 +20,30 @@
                 <img src="/static/img/logo.svg" alt="logo">
             </div>
 
+            <div class="open-icon mobile"><a href="#"><img src="/static/img/menu-icon.svg" alt="open menu icon"></a></div>
+
             <div class="nav-items">
-                <a href="#about-sect"> About</a>
-                <a href="#projects-sect"> Projects</a>
-                <a href="#skills-sect"> Skills</a>
-                <a href="#contact-sect"> Contact</a>              
+                <div class="collapse-icon mobile"><a href="#"><img src="/static/img/close-icon.svg" alt="close menu icon"></a></div>
+                
+                <a href="#about-sect" onclick="collapseMenu()"> About</a>
+                <a href="#projects-sect" onclick="collapseMenu()"> Projects</a>
+                <a href="#skills-sect" onclick="collapseMenu()"> Skills</a>
+                <a href="#contact-sect" onclick="collapseMenu()"> Contact</a>   
+                
+                <ul class="mobile">
+                    <li>
+                        <a target="blank" href="https://github.com/kymaniAnderson">
+                        <img src="/static/img/github-icon.svg" alt="github"></a>
+                    </li>
+                    <li>
+                        <a target="blank" href="https://www.linkedin.com/in/kymani-anderson/">
+                        <img src="/static/img/linkedin-icon.svg" alt="linkedin"></a>
+                    </li>
+                    <li>
+                        <a target="blank" href="https://www.instagram.com/kymani.anderson/">
+                        <img src="/static/img/instagram-icon.svg" alt="instagram"></a>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -304,5 +323,9 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js" integrity="sha512-DlTk2PLUinhBupE89kHOJTt11QqbRMQVlbb26XVDvp4D1kt0fRvQJslvZnTelRJHq6yK0tIPCR7cul8+9Blz0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/scripts/main.js"></script>
     </body>
 </html>

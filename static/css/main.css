@@ -180,9 +180,18 @@ section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   section:nth-child(n + 3) {
-    padding: 2.25rem 0.75rem;
+    padding: 2.25rem 1.125rem;
+  }
+  .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -207,6 +216,61 @@ section:nth-child(n + 3) {
 
 .nav-sect .nav-items a {
   padding-left: 2.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-sect {
+    padding: 1rem 1.125rem;
+    overflow: hidden;
+  }
+  .nav-sect .nav-logo {
+    float: left;
+  }
+  .nav-sect .open-icon {
+    float: right;
+  }
+  .nav-sect .nav-items {
+    height: 100vh;
+    background-color: #282321;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
+    display: none;
+  }
+  .nav-sect .nav-items .collapse-icon {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav-sect .nav-items a:nth-child(1) {
+    padding-bottom: 3rem;
+  }
+  .nav-sect .nav-items a {
+    display: block;
+    color: #f6bd3a;
+    padding: 1.5rem;
+  }
+  .nav-sect .nav-items ul {
+    padding: 0;
+  }
+  .nav-sect .nav-items ul li {
+    padding-top: 3rem;
+  }
 }
 
 /*                  2                 */

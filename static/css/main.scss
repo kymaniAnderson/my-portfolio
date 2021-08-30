@@ -6,10 +6,18 @@ section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
 }
 
+.mobile {
+  display: none;
+}
+
 // Mobile:
 @media only screen and (max-width: 800px) {
   section:nth-child(n + 3) {
-    padding: 2.25rem 0.75rem;
+    padding: 2.25rem 1.125rem;
+  }
+
+  .mobile {
+    display: flex;
   }
 }
 
@@ -31,6 +39,60 @@ section:nth-child(n + 3) {
     float: right;
     a {
       padding-left: 2.5rem;
+    }
+  }
+}
+
+// Mobile:
+@media only screen and (max-width: 800px) {
+  .nav-sect {
+    padding: 1rem 1.125rem;
+    overflow: hidden;
+
+    .nav-logo {
+      float: left;
+    }
+
+    .open-icon {
+      float: right;
+    }
+
+    .nav-items {
+      height: 100vh;
+      background-color: $almost-black;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: top 1s ease;
+      display: none;
+
+      .collapse-icon {
+        display: block;
+        align-items: center;
+      }
+
+      a:nth-child(1) {
+        padding-bottom: 3rem;
+      }
+
+      a {
+        display: block;
+        color: $mustard-yellow;
+        padding: 1.5rem;
+      }
+
+      ul {
+        padding: 0;
+
+        li {
+          padding-top: 3rem;
+        }
+      }
     }
   }
 }
