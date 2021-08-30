@@ -40,15 +40,16 @@ section:nth-child(n + 3) {
 // Desktop:
 .hero-sect {
   padding: 3.75rem 8rem 0rem 8rem;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 40% auto;
 
   .hero-img {
-    float: left;
+    img {
+      max-width: 100%;
+    }
   }
 
   .hero-info {
-    float: right;
-
     .hero-text {
       float: left;
       text-align: right;
@@ -71,7 +72,7 @@ section:nth-child(n + 3) {
 
     .hero-socials {
       float: right;
-      padding-top: 7.5rem;
+      padding-top: 8rem;
       padding-left: 1.5rem;
 
       ul {
@@ -222,6 +223,77 @@ section:nth-child(n + 3) {
 
       .skills-title {
         padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+/*                  7                 */
+/*          Contact Section          */
+// Desktop:
+.contact-sect {
+  overflow: hidden;
+
+  .contact-form {
+    float: left;
+    padding: 4.5rem 0rem 0rem 9rem;
+
+    h2 {
+      padding-bottom: 4rem;
+    }
+
+    p {
+      padding-bottom: 3rem;
+
+      input,
+      textarea {
+        width: 450px;
+        max-width: 100%;
+        height: 65px;
+        border: 0;
+        border-radius: 0.5rem;
+        background-color: $morning-grey;
+      }
+
+      textarea {
+        height: 120px;
+      }
+    }
+
+    p:last-child {
+      text-align: right;
+    }
+  }
+
+  .contact-decor {
+    float: right;
+    text-align: center;
+    background-color: $mustard-yellow;
+    padding: 4.5rem 1.5rem 0rem 0rem;
+    min-height: 720px;
+    height: auto !important;
+    height: 720px;
+    max-width: 40%;
+
+    .contact-head {
+      overflow: visible;
+      margin-left: 3rem;
+
+      h3 {
+        font-weight: 700;
+        color: $just-white;
+        padding-bottom: 5rem;
+      }
+    }
+
+    .contact-img {
+      position: relative;
+      left: -10rem;
+    }
+    .contact-foot {
+      p {
+        position: relative;
+        bottom: -5rem;
       }
     }
   }
