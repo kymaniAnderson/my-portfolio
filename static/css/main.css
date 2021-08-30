@@ -175,6 +175,17 @@ ul {
   padding-left: 0.5rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .yellow-btn {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .orange-btn {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}
+
 /*          General Configs          */
 section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
@@ -184,14 +195,24 @@ section:nth-child(n + 3) {
   display: none;
 }
 
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media only screen and (max-width: 800px) {
   section:nth-child(n + 3) {
     padding: 2.25rem 1.125rem;
+    text-align: center;
   }
   .mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .desktop {
+    display: none;
   }
 }
 
@@ -220,7 +241,7 @@ section:nth-child(n + 3) {
 
 @media only screen and (max-width: 800px) {
   .nav-sect {
-    padding: 1rem 1.125rem;
+    padding: 0.625rem 1.125rem;
     overflow: hidden;
   }
   .nav-sect .nav-logo {
@@ -317,6 +338,31 @@ section:nth-child(n + 3) {
   padding-bottom: 2.5rem;
 }
 
+@media only screen and (max-width: 800px) {
+  .hero-sect {
+    padding: 2.25rem 1.125rem;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .hero-sect .hero-info .hero-text {
+    float: none;
+    text-align: center;
+  }
+  .hero-sect .hero-info .hero-text h1 {
+    padding-top: 0.75rem;
+  }
+  .hero-sect .hero-info .hero-text h4 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .hero-sect .hero-info .hero-text hr {
+    margin-left: auto;
+  }
+  .hero-sect .hero-info .hero-socials {
+    float: none;
+  }
+}
+
 /*                  3                 */
 /*          Featured Section         */
 .featured-sect {
@@ -336,6 +382,25 @@ section:nth-child(n + 3) {
 
 .featured-sect .featured-img {
   margin-left: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .featured-sect {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .featured-sect .featured-info h2 {
+    padding-bottom: 1rem;
+  }
+  .featured-sect .featured-info h5 {
+    padding-bottom: 2rem;
+  }
+  .featured-sect .featured-img {
+    padding-top: 2.5rem;
+  }
+  .featured-sect .featured-img img {
+    max-width: 100%;
+  }
 }
 
 /*                  4                 */

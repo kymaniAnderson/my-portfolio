@@ -207,3 +207,16 @@ ul {
     padding-left: 0.5rem;
   }
 }
+
+// Mobile:
+@media only screen and (max-width: 800px) {
+  .yellow-btn {
+    font-size: $mobile-size-4;
+    padding: 0.5rem;
+  }
+
+  .orange-btn {
+    font-size: $mobile-size-4;
+    padding: 0.5rem;
+  }
+}

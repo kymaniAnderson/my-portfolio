@@ -174,4 +174,15 @@ ul {
 .orange-btn span {
   padding-left: 0.5rem;
 }
+
+@media only screen and (max-width: 800px) {
+  .yellow-btn {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .orange-btn {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}
 /*# sourceMappingURL=base.css.map */
