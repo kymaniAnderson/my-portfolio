@@ -186,6 +186,49 @@ ul {
   }
 }
 
+.hero-sect .hero-img img {
+  position: relative;
+  z-index: -1;
+  animation: float 1.5s infinite alternate-reverse;
+}
+
+@-webkit-keyframes float {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 60px;
+  }
+}
+
+@keyframes float {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  @-webkit-keyframes float {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+  @keyframes float {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+}
+
 /*          General Configs          */
 section:nth-child(n + 3) {
   padding: 4.5rem 9rem;
@@ -224,6 +267,7 @@ section:nth-child(n + 3) {
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 1;
   top: 0;
 }
 

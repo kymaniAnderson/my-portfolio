@@ -1,0 +1,29 @@
+.hero-sect {
+  .hero-img {
+    img {
+      position: relative;
+      z-index: -1;
+      animation: float 1.5s infinite alternate-reverse;
+    }
+  }
+}
+
+@keyframes float {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  @keyframes float {
+    from {
+      bottom: 0;
+    }
+    to {
+      bottom: 10px;
+    }
+  }
+}
