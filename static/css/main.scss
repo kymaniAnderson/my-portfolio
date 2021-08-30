@@ -137,3 +137,63 @@ section:nth-child(n + 3) {
     }
   }
 }
+
+/*                  5                 */
+/*          Projects Section         */
+// Desktop:
+.projects-sect {
+  h2 {
+    padding-bottom: 4rem;
+  }
+
+  .projects-card:not(:last-child) {
+    padding-bottom: 8rem;
+  }
+
+  .projects-card {
+    display: grid;
+    grid-template-columns: 60% auto;
+
+    .projects-info {
+      h2 {
+        padding-bottom: 1rem;
+      }
+
+      ul {
+        padding: 0;
+        padding-bottom: 1rem;
+        display: flex;
+
+        li:last-child {
+          padding-left: 1.5rem;
+        }
+      }
+
+      h5 {
+        padding-bottom: 2rem;
+      }
+
+      .projects-desc {
+        background-color: $almost-black;
+        border-radius: 0.5rem;
+        padding: 1rem;
+
+        h5 {
+          color: $just-white;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .projects-img {
+      z-index: -1;
+      left: -2rem;
+      margin: -2rem;
+
+      img {
+        filter: brightness(90%);
+        box-shadow: 10px 10px 20px 10px $morning-grey;
+      }
+    }
+  }
+}
