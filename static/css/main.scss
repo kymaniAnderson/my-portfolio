@@ -153,6 +153,7 @@ section:nth-child(n + 3) {
   .projects-card {
     display: grid;
     grid-template-columns: 60% auto;
+    column-gap: 2rem;
 
     .projects-info {
       h2 {
@@ -186,13 +187,41 @@ section:nth-child(n + 3) {
     }
 
     .projects-img {
-      z-index: -1;
-      left: -2rem;
-      margin: -2rem;
+      height: 80%;
+      margin: auto;
 
-      img {
-        filter: brightness(90%);
-        box-shadow: 10px 10px 20px 10px $morning-grey;
+      z-index: -1;
+    }
+  }
+}
+
+/*                  6                 */
+/*           Skills Section          */
+// Desktop:
+.skills-sect {
+  h2 {
+    padding-bottom: 4rem;
+  }
+
+  .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .skills-card {
+      margin: 3rem;
+      border-radius: 0.5rem;
+      width: 225px;
+      max-width: 100%;
+      height: 275px;
+      max-height: 100%;
+      padding: 2rem;
+      background-color: $almost-white;
+      box-shadow: 0px 6px 18px 0px $night-grey;
+      text-align: center;
+
+      .skills-title {
+        padding-bottom: 2rem;
       }
     }
   }
