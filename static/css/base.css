@@ -119,24 +119,24 @@ ul {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
   h5,
   input,
   textarea {
-    font-size: 12px;
+    font-size: 14px;
   }
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -177,11 +177,11 @@ ul {
 
 @media only screen and (max-width: 800px) {
   .yellow-btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0.5rem;
   }
   .orange-btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0.5rem;
   }
 }
