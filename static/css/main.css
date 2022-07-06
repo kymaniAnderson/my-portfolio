@@ -629,7 +629,7 @@ section:nth-child(n + 3) {
   border-radius: 0.5rem;
   width: 225px;
   max-width: 100%;
-  height: 275px;
+  height: 325px;
   max-height: 100%;
   padding: 2rem;
   background-color: #f8f8f8;
@@ -658,7 +658,7 @@ section:nth-child(n + 3) {
   }
   .skills-sect .skills-content .skills-card {
     margin: 2rem;
-    height: 225px;
+    height: 250px;
   }
   .skills-sect .skills-content .skills-card .skills-title {
     padding-bottom: 1.25rem;
@@ -692,10 +692,12 @@ section:nth-child(n + 3) {
   border: 0;
   border-radius: 0.5rem;
   background-color: #f0f0f0;
+  padding-left: 10px;
 }
 
 .contact-sect .contact-form p textarea {
   height: 120px;
+  padding-top: 15px;
 }
 
 .contact-sect .contact-form p:last-child {
@@ -750,6 +752,7 @@ section:nth-child(n + 3) {
   .contact-sect .contact-form p input,
   .contact-sect .contact-form p textarea {
     height: 45px;
+    width: 100%;
   }
   .contact-sect .contact-form p textarea {
     height: 95px;
